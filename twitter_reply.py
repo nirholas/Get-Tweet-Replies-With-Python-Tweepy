@@ -16,8 +16,8 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # update these for the tweet you want to process replies to 'name' = the account username and you can find the tweet id within the tweet URL
-name = 'LunarCRUSH'
-tweet_id = '1270923526690664448'
+name = 'tenderize_me'
+tweet_id = '1745799013025394937'
 
 replies=[]
 for tweet in tweepy.Cursor(api.search,q='to:'+name, result_type='recent', timeout=999999).items(1000):
